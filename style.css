@@ -81,3 +81,6 @@ a:hover {
 #footer { background:url(images/ft.jpg); height:50px; position:relative}
 #ftinner{ position:absolute; bottom:20px; min-width:680px; margin-left:150px;}
 .ftlink {min-width:500px;}
+
+
+article p{font-size:16px;font-family:Helvetica,Tahoma,Arial,sans-serif;margin:7px 0;}
