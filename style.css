@@ -81,9 +81,15 @@ a:hover {
 #ftinner{ position:absolute; bottom:20px; min-width:680px; margin-left:150px;}
 .ftlink {min-width:500px;}
 
+<<<<<<< HEAD
 article{font-family:Helvetica,Tahoma,Arial,sans-serif;font-size:16px;}
 article p{margin:7px 0;}
 article h3{font-size:18px;font-weight:bold;padding:5px 0;}
 article h4{font-weight:bold;padding:5px 0;}
 article ul{padding-left:15px;}
 article li{list-style:normal;}
+=======
+article{font-family:Helvetica,Tahoma,Arial,sans-serif;}
+article p{font-size:16px;margin:7px 0;}
+article h3{font-size:18px;font-weight:bold;}
+>>>>>>> 23a1398d028414da4b9ac06f63cc3d8fdd7afbfc
