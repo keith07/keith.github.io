@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<META NAME ="keywords" CONTENT="leisure time at sunshine coast,keith">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Keith's leisure time at sunshine coast</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<div id="wrap">
+    <div id="header">
+      <div id="logo">
+        <h1>Keith's</h1>
+        <div>leisure time at sunshine coast</div>
+      </div>
+      <ul id="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Production</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <!-- /header -->
+    <div id="content">
+      <div class="side fl">
+        <div id="top">
+          <h2>Web通信</h2>
+          <ul class="meun">
+            <li><a href="#">网络七层</a></li>
+            <li><a href="communication_tcp.html">TCP协议</a></li>
+            <li><a href="#">Richard Clintock </a></li>
+            <li><a href="#">Latin professor </a></li>
+            <li><a href="#">Hampden Sydney </a></li>
+          </ul>
+        </div>
+        <div id="bm">
+          <h2>Other sevices</h2>
+          <ul class="meun">
+            <li><a href="#">Vestibulum bibendum  tellus.</a></li>
+            <li><a href="#">Maecenas egestas sapien ac .</a></li>
+            <li><a href="#">Nam volutpat  ante.</a></li>
+            <li><a href="#">Curabitur rhoncus leo in nisi.</a></li>
+            <li><a href="#">Nulla fringilla eros at sem.</a></li>
+            <li><a href="#">Integer euismod  id est.</a></li>
+            <li><a href="#">Aenean viverra mi eu justo.</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="main fr">
+		<article id="text">
+          <h2>JVM</h2>
+          <h3>GC</h3>
+            <br/>
+            <p>
+			&nbsp;&nbsp;&nbsp;&nbsp;涉及内存：堆内存，方法区--永久代。GC的过程就是找到并回收不可达对象所占内存。
+			由于内存回收后容易产生碎片，因此GC需要考虑内存碎片的整理，涉及算法包括：复制、标记-清理、标记-整理等。
+			</p>
+			<ul>
+				<li>
+				标记-清理。标记需要回收的内存，一次性回收。
+				</li>
+				<li>
+				复制算法。将内存划分为from space\to space，gc时将from space不被回收的数据拷贝到to space然后变为from space，
+				之前的from space变为to space。
+				</li>
+				<li>
+				标记-整理。标记需要回收的内存，一次性回收然后进行碎片整理。
+				</li>
+			</ul>
+			<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;基于对复制算法和标记-整理算法的性能比较以及内存回收分析，将堆内存分为了新生代和老年代。
+			新生代中内存回收比率较高因此采用复制算法，而老年代回收比率通常较低因此采用标记-整理算法。
+			其中新生代又分为eden区跟survival区，survival区则分为了from space和to space两部分。eden区存放新建对象，
+			survival区存放经过gc后存活的对象，eden space及from space中存活的对象被复制到to space。
+			新建对象通常在新生代中eden区分配内存，新生代分配不了内存的大对象直接进入老年代，经过多次gc仍未被回收的对象被移到老年代。
+			<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;新生代GC被称为Minor GC，老年代和永久代的GC叫做Major GC，由于Major GC除并发GC外
+			都需要对整个堆扫描和回收，又被称为Full GC。
+			</p>
+			<p>参照<a href="http://www.open-open.com/lib/view/open1399988244301.html">http://www.open-open.com/lib/view/open1399988244301.html</a></p>
+		</article>
+        <div class="clearfix"></div>
+        <!--div id="col">
+          <div class="first fl">
+            <ul>
+              <li><a href="#">Latin literature </a></li>
+              <li><a href="#">making over years </a></li>
+              <li><a href="#">Richard Clintock </a></li>
+              <li><a href="#">Virginia looked one</a></li>
+              <li><a href="#">Latin professor </a></li>
+              <li><a href="#">Hampden Sydney </a></li>
+            </ul>
+          </div>
+          <div class=" fl ">
+            <ul>
+              <li><a href="#">Latin literature </a></li>
+              <li><a href="#">making over years </a></li>
+              <li><a href="#">Richard Clintock </a></li>
+              <li><a href="#">Latin professor </a></li>
+              <li><a href="#">Hampden Sydney </a></li>
+              <li><a href="#">Virginia looked one</a></li>
+            </ul>
+          </div>
+        </div-->
+      </div>
+      <!-- /content -->
+    </div>
+    <div class="clearfix"></div>
+    <div id="footer">
+      <div id="ftinner">
+        <div class="ftlink fl"> <a href="#">Home</a> | <a href="#">About Us</a> | <a href="#">Production</a> | <a href="#">Submission</a> | <a href="#">Contact</a>
+        </div>
+        <span id="copyright" class="fr">Copyright © 2015. All Rights Reserved. </span>
+      </div>
+    </div>
+    <!-- /footer -->
+</div>
+</body>
+</html>
